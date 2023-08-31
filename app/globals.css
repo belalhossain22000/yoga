@@ -9,15 +9,29 @@
   @apply max-w-[1090px] w-full mx-auto;
 }
 .btn {
+  position: relative;
   border-radius: 30px;
-  background: #27392a;
+  background: linear-gradient(90deg, #27392a 50%, white 50%);
+  background-size: 200% 100%;
   color: #fff;
   font-family: DM Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 155.556%; /* */
+  line-height: 155.556%; 
+  transition: background-position 0.7s, color 0.7s, border 0.7s;
 }
+
+
+
+
+.btn:hover {
+  color: #27392a;
+  border: 1px solid black;
+  background-position: 100% 0;
+}
+
+
 h1 {
   color: #27392a;
   font-family: DM Serif Display;

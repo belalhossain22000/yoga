@@ -2,9 +2,9 @@ import React from 'react'
 
 const Button = ({ children, px,py }) => {
     return (
-        <div className={`btn ${px} ${py} w-fit`}>
+        <button className={`btn ${px} ${py} w-fit `}>
             {children}
-        </div>
+        </button>
     )
 }
 
