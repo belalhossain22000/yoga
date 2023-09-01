@@ -20,7 +20,7 @@ export default function Home() {
      <Place/>
      <Teachers/>
      <Team/>
-     {/* <Footer/> */}
+     <Footer/>
     </main>
   )
 }

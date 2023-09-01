@@ -10,17 +10,17 @@ import { FaFacebook, FaInstagramSquare, FaYoutube } from 'react-icons/fa';
 const Footer = () => {
   return (
     <>
-      <section className='bg-[#F5F5F5] pt-[80px] xlg:mt-[100px] mt-10'>
+      <section className='bg-[#F5F5F5] pt-[80px] xlg:mt-[100px] mt-10 px-5 xl:px-0'>
         <Container maxWidth={"max-w-[1168px]"}>
           <div className='flex flex-col items-center'>
 
             <Image src={logo} alt='logo' className='h-[50px] w-[54px] mb-5'/>
             <h5 className='mb-4'>Invest in your health.</h5>
-            <p className='mb-10'>450 NW Couch Street, Portland, Oregon 97209</p>
+            <p className='mb-5 xm:mb-10'>450 NW Couch Street, Portland, Oregon 97209</p>
             {/* input */}
-            <div className='w-[570px] h-[60px] relative bg-[#FFF] rounded-[32px]'>
+            <div className='flex flex-col items-center gap-5 w-[80%] md:w-[570px] h-[60px] relative bg-[#FFF] rounded-[32px] mb-5'>
               <input type="email" placeholder='Email Address' className='w-full h-full bg-[#FFF] rounded-[32px] pl-[30px] py-[19px]' />
-              <div className='w-fit absolute right-[3px] top-[3px] bottom-auto'>
+              <div className='w-fit xm:absolute right-[3px] top-[3px] bottom-auto'>
 
                 <Button px={"px-[35px]"} py={"py-[13px]"}>Subscribe</Button>
               </div>
@@ -30,8 +30,8 @@ const Footer = () => {
         </Container>
         <Container maxWidth={"max-w-[1168px]"}>
         {/* menu section */}
-        <div className='flex items-center justify-between mt-[60px]'>
-          <div className='flex items-center gap-[30px]'>
+        <div className='flex md:flex-row flex-col items-center md:justify-between mt-[60px]'>
+          <div className='flex flex-wrap items-center gap-4 xlg:gap-[30px]'>
             <Link href={"/"}>About</Link>
             <Link href={"/"}>Schedules</Link>
             <Link href={"/"}>Membership</Link>
