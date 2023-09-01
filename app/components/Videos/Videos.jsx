@@ -8,10 +8,10 @@ import VideoCard from './VideoCard'
 const Videos = () => {
   return (
 
-    <section className='px-5 xl:px-0 '>
+    <section className='px-5 xl:px-0 xlg:mt-[100px] mt-10 '>
       <Container maxWidth={"max-w-[1168px]"}>
 
-        <h1 className='text-center'>Free Videos</h1>
+        <h1 className='text-center mb-[50px]'>Free Videos</h1>
 
 
         <div className='video-container gap-5'>
