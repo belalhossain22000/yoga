@@ -17,7 +17,7 @@ const Hero = () => {
     <header className='mt-[50px] md:mt-0'>
       <Container maxWidth={"max-w-[1440px]"}>
         {/* top side hero */}
-        <div className='flex items-center md:flex-row flex-col space-y-12 justify-center gap-0 px-5 xl:px-[117px]'>
+        <div className='flex items-center md:flex-row flex-col space-y-12 justify-center gap-0 px-5 xl:px-[50px] 2xl:px-[117px]'>
           {/* left middle sie */}
           <div className='flex xm:flex-row flex-col items-center space-y-12 '>
 
