@@ -14,7 +14,7 @@ import Container from '@/app/utils/Container/Container';
 
 const Hero = () => {
   return (
-    <header>
+    <header className='mt-[50px] md:mt-0'>
       <Container maxWidth={"max-w-[1440px]"}>
         {/* top side hero */}
         <div className='flex items-center md:flex-row flex-col space-y-12 justify-center gap-0 px-5 xl:px-[117px]'>

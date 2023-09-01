@@ -14,7 +14,7 @@ export default function Home() {
     <main>
      <Navbar/>
      <Hero/>
-     {/* <Category/> */}
+     <Category/>
      {/* <Elevate/> */}
      {/* <Videos/> */}
      {/* <Place/> */}
