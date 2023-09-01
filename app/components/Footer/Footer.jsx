@@ -18,11 +18,11 @@ const Footer = () => {
             <h5 className='mb-4'>Invest in your health.</h5>
             <p className='mb-5 xm:mb-10'>450 NW Couch Street, Portland, Oregon 97209</p>
             {/* input */}
-            <div className='flex flex-col items-center gap-5 w-[80%] md:w-[570px] h-[60px] relative bg-[#FFF] rounded-[32px] mb-5'>
-              <input type="email" placeholder='Email Address' className='w-full h-full bg-[#FFF] rounded-[32px] pl-[30px] py-[19px]' />
-              <div className='w-fit xm:absolute right-[3px] top-[3px] bottom-auto'>
+            <div className='flex flex-col items-center gap-5 w-[80%] md:w-[570px] h-12 xm:h-[60px] relative bg-[#FFF] rounded-[32px] mb-5'>
+              <input type="email" placeholder='Email Address' className='w-full h-full bg-[#FFF] rounded-[32px] pl-[30px] py-[19px] bg-red' />
+              <div className='w-fit absolute right-[3px] top-[3px] bottom-auto'>
 
-                <Button px={"px-[35px]"} py={"py-[13px]"}>Subscribe</Button>
+                <Button px={" px-2 xm:px-[35px]"} py={"py-[7px] xm:py-[13px]"}>Subscribe</Button>
               </div>
             </div>
 
