@@ -11,9 +11,9 @@ import TeachersCard from './TeachersCard';
 const Team = () => {
   return (
     <Container maxWidth={"max-w-[1168px]"}>
-      <section className='xlg:mt-[100px] mt-10'>
+      <section className='xlg:mt-[100px] mt-10 px-5 xl:px-0'>
         <h2 className='text-center'>Meet Our Talented Team</h2>
-        <div className='grid grid-cols-3 mt-[50px]'>
+        <div className='team-container mt-[50px]'>
           <TeachersCard person={person1} bg={bg1} title="Jessica Smith" name="Vinyasa Yoga Teacher"/>
           <TeachersCard person={person2} bg={bg2} title="John Franklin" name="Yoga Teacher"/>
           <TeachersCard person={person3} bg={bg3} title="John Franklin" name="Hatha Yoga Teacher"/>
