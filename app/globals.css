@@ -29,19 +29,23 @@
 }
 
 h1,
+h2,
 h6 {
   font-family: DM Serif Display;
 }
 h1 {
   @apply text-[#27392a] 2xl:text-[60px] xlg:text-[50px] text-[45px] font-normal leading-[116%];
 }
-h2 {
+/* h2 {
   color: #27392a;
   font-family: DM Serif Display;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /*  */
+  line-height: 120%; 
+} */
+h2{
+ @apply text-[#27392a] text-[30px] md:text-[40px] xlg:text-[50px] font-normal leading-[120%]
 }
 h4 {
   color: #27392a;

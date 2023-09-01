@@ -15,7 +15,7 @@ export default function Home() {
      <Navbar/>
      <Hero/>
      <Category/>
-     {/* <Elevate/> */}
+     <Elevate/>
      {/* <Videos/> */}
      {/* <Place/> */}
      {/* <Teachers/> */}
