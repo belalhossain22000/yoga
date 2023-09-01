@@ -3,21 +3,27 @@ import Image from 'next/image'
 import video from './image/video1.png'
 import video2 from './image/video2 .png'
 import Container from '@/app/utils/Container/Container'
+import VideoCard from './VideoCard'
 
 const Videos = () => {
   return (
-    <Container maxWidth={"max-w-[1168px]"}>
 
-      <section>
+    <section className='px-5 xl:px-0 '>
+      <Container maxWidth={"max-w-[1168px]"}>
+
         <h1 className='text-center'>Free Videos</h1>
-        <div className='grid grid-cols-3'>
-          <Image src={video} alt='video' />
-          <Image src={video2} alt='video' />
-          <Image src={video} alt='video' />
-        </div>
-      </section>
 
-    </Container>
+
+        <div className='video-container gap-5'>
+          <VideoCard image={video} />
+          <VideoCard image={video2} />
+          <VideoCard image={video} />
+        </div>
+
+
+      </Container>
+    </section>
+
   )
 }
 

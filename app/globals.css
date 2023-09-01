@@ -27,6 +27,12 @@
   border: 1px solid black;
   background-position: 100% 0;
 }
+/* video section grid layout */
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+}
 
 h1,
 h2,
