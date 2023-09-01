@@ -9,18 +9,18 @@ import PlaceCard from './PlaceCard';
 
 const Place = () => {
   return (
-    <Container maxWidth={"max-w-[1168px]"}>
-      <section className='mt-[100px] '>
+    <section className='mt-[100px] px-5 xl:px-0'>
+      <Container maxWidth={"max-w-[1168px]"}>
         <h1 className='text-center'>The Place You’ll Love</h1>
-        <div className='grid grid-cols-4 mt-[50px]'>
-        <PlaceCard image={waterBottle} title1="Premium " title12="Water"/>
-        <PlaceCard image={stone} title1="Control" title12="Stress"/>
-        <PlaceCard image={workOut} title1="All-In-One  " title12="Workout"/>
-        <PlaceCard image={welcome} title1="Welcoming " title12="Studios"/>
+        <div className='place-container mt-[50px]'>
+          <PlaceCard image={waterBottle} title1="Premium " title12="Water" />
+          <PlaceCard image={stone} title1="Control" title12="Stress" />
+          <PlaceCard image={workOut} title1="All-In-One  " title12="Workout" />
+          <PlaceCard image={welcome} title1="Welcoming " title12="Studios" />
 
         </div>
-      </section>
-    </Container>
+      </Container>
+    </section>
   )
 }
 

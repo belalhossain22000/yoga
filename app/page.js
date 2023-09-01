@@ -17,8 +17,8 @@ export default function Home() {
      <Category/>
      <Elevate/>
      <Videos/>
-     {/* <Place/> */}
-     {/* <Teachers/> */}
+     <Place/>
+     <Teachers/>
      {/* <Team/> */}
      {/* <Footer/> */}
     </main>

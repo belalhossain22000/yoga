@@ -9,15 +9,15 @@ const Teachers = () => {
   return (
     <Container maxWidth={"max-w-[1168px]"}>
 
-      <section className='flex items-center justify-between'>
+      <section className='flex xm:flex-row flex-col-reverse items-center justify-between gap-5 mt-10 xlg:mt-[100px] px-5 xl:px-0'>
         {/* left side */}
-        <div>
-          <h2>Diverse classes, great <br /> teachers - thats us!</h2>
-          <p>Ignite your curiosity with our exceptional <br /> teachers and diverse classes.</p>
-          <div className='bg-[#F5F5F5] p-[30px] w-fit '>
+        <div className=''>
+          <h2 className=' mb-3 xlg:mb-[30px]'>Diverse classes, great <br /> teachers - thats us!</h2>
+          <p className='mb-5 xlg:mb-[50px]'>Ignite your curiosity with our exceptional <br /> teachers and diverse classes.</p>
+          <div className='bg-[#F5F5F5] p-[30px] w-fit mb-3 xlg:mb-5 '>
             <p className='italic'>Experience transformative yoga with them. Expert <br /> instructors, welcoming environment, and holistic benefits. <br /> Join us for mindful movement and inner peace.</p>
           </div>
-          <div className='flex items-center gap-[15px]'>
+          <div className='flex items-center gap-[15px] '>
             <Image src={profile} alt='image' className='h-[70px] w-[70px] rounded-full object-cover' />
             <div>
               <p>Oliver Quenn</p>
@@ -26,9 +26,9 @@ const Teachers = () => {
           </div>
         </div>
         {/* right side */}
-        <div className='relative w-[500px]'>
-          <Image className='absolute bottom-0 -left-12 right-0 -z-10 object-cover' src={halfCircle} alt='image' />
-          <Image className='-mr-10' src={person} alt='image' />
+        <div className='relative  xm:w-[450px] xl:w-[500px] b-green-500'>
+          <Image className='absolute bottom-0   -z-10 object-cover' src={halfCircle} alt='image' />
+          <Image className='xlg:ml-[4%] lg:ml-[8%]' src={person} alt='image' />
         </div>
       </section>
     </Container>
