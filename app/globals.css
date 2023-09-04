@@ -54,7 +54,7 @@ h6 {
   font-family: DM Serif Display;
 }
 h1 {
-  @apply text-[#27392a] 2xl:text-[60px] xlg:text-[50px] text-[45px] font-normal leading-[116%];
+  @apply text-[#27392a] 2xl:text-[60px] xlg:text-[50px] xm:text-[45px] text-[30px] font-normal leading-[116%];
 }
 /* h2 {
   color: #27392a;

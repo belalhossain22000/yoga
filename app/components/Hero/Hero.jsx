@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Image from 'next/image';
 import flower from './image/flower.png'
@@ -11,10 +12,11 @@ import person3 from './image/person3.png';
 import Button from '@/app/utils/Button/Button';
 import YogaCard from '@/app/components/Hero/YogaCard/YogaCard';
 import Container from '@/app/utils/Container/Container';
+import Reveals from '@/app/animations/Reveals/Reveals';
 
 const Hero = () => {
   return (
-    <header className='mt-[50px] md:mt-0'>
+    <header className='mt-5 md:mt-0'>
       <Container maxWidth={"max-w-[1440px]"}>
         {/* top side hero */}
         <div className='flex items-center md:flex-row flex-col space-y-12 justify-center gap-0 px-5 xl:px-[50px] 2xl:px-[117px]'>
@@ -23,9 +25,15 @@ const Hero = () => {
 
             {/* left side */}
             <div className='b-red-500 '>
-              <h1 className='md:mb-[30px] mb-5'>Empower <br /> Through Yoga  <br /><span className='flex items-center gap-5'>Journey <Image className='mt-5' src={flower} alt='flower' /></span> </h1>
-              <p className='md:mb-[30px] mb-5'>Empower Through Yoga: Find strength, balance, <br /> connection. Unleash your potential, create change. <br /> Breathe, evolve, empower.</p>
-              <h5 className='flex items-end gap-[5px] md:mb-[22px] mb-4'>15.5 <p>Per month</p></h5>
+              <Reveals>
+                <h1 className='md:mb-[30px] mb-1'>Empower <br /> Through Yoga  <br /><span className='flex items-center gap-5'>Journey <Image className='mt-5' src={flower} alt='flower' /></span> </h1>
+              </Reveals>
+              <Reveals>
+                <p className='md:mb-[30px] mb-2'>Empower Through Yoga: Find strength, balance, <br /> connection. Unleash your potential, create change. <br /> Breathe, evolve, empower.</p>
+              </Reveals>
+              <Reveals>
+                <h5 className='flex items-end gap-[5px] md:mb-[22px] mb-4'>15.5 <p>Per month</p></h5>
+              </Reveals>
               <Button px={'px-[50px]'} py={'py-[15px]'}>
                 GET STARTED
               </Button>
@@ -35,6 +43,7 @@ const Hero = () => {
               <div className='relative xlg:w-[400px] '>
                 <Image className='absolute z-10 bottom-12 xm:left-[-10%] ' src={greedBg} alt='green bg' />
                 <Image className='relative z-20 ' src={person} alt='person' />
+
 
               </div>
               {/* flower */}
@@ -66,11 +75,15 @@ const Hero = () => {
             <div className='flex items-center gap-7 md:gap-[80px]'>
               <div>
                 <h5 className='mb-[10px]'>85+</h5>
-                <p>Yoga Classes</p>
+                <Reveals>
+                  <p>Yoga Classes</p>
+                </Reveals>
               </div>
               <div>
                 <h5 className='mb-[10px]'>350+</h5>
-                <p>Participant </p>
+                <Reveals>
+                  <p>Participant </p>
+                </Reveals>
               </div>
             </div>
           </div>
